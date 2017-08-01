@@ -12,5 +12,5 @@ func main() {
 		io.WriteString(w, "Hello World")
 	})
 	log.Println("Ello!")
-	log.Fatalln(http.ListenAndServe(":"+os.Getenv("PORT"), nil))
+	log.Fatalln(http.ListenAndServe(":"+os.Getenv("HTTP_PLATFORM_PORT"), nil))
 }
